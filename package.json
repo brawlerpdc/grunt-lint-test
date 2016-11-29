@@ -1,0 +1,26 @@
+{
+  "name": "pdc",
+  "version": "1.0.0",
+  "description": "playstation.com",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "phantom": "^3.0.2"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-cli": "~0.1.13",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-eslint": "^19.0.0",
+    "grunt-lesshint": "^1.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.snei.sony.com/SIEE/pdc.git"
+  },
+  "author": "",
+  "license": "ISC"
+}

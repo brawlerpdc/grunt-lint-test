@@ -1,0 +1,78 @@
+{
+    
+    // LESSHint rules 
+    // https://github.com/lesshint/lesshint/blob/master/lib/linters/README.md
+
+    //Prefer the terser border: 0 over border: none, as it is usually what is intended.
+    "borderZero": { 
+        "enabled": true, 
+        "style": "zero" 
+    },     
+
+    //Sets the depth of nested styles in every parent style.
+    "depthLevel": { 
+        "enabled": true, 
+        "depth": 3 
+    },          
+    
+    //There shouldn't be any duplicate properties since this is usually an error
+    "duplicateProperty": { 
+        "enabled": true 
+    },               
+    
+    //There shouldn't be any empty rules present.
+    "emptyRule": {
+        "enabled": true
+    },
+
+    //Lines shouldn't exceed the defined length.
+    "maxCharPerLine" : {
+        "enabled": true,
+        "limit" : 200
+    },
+
+    //Check if hex color declarations are valid.
+    "hexValidation": { 
+        "enabled": true 
+    },
+
+    //Disallow the usage of !important.
+    "importantRule": { 
+        "enabled": true 
+    },                   
+
+    //Rules for naming selectors
+    "selectorNaming": { "enabled": true,
+        "disallowUppercase": true,
+        "disallowUnderscore": true,
+        "disallowDash": false
+    },
+
+    //The colon in property declarations shouldn't be preceded by any space.
+    "spaceAfterPropertyName": {
+        "enabled": true,
+        "style": "no_space"
+    },
+
+    //The semicolon in property declarations shouldn't be preceded by any space.
+    "spaceAfterPropertyValue": {
+        "enabled": true,
+        "style": "no_space"
+    },
+
+    //All property declarations should end with a semicolon
+    "trailingSemicolon": {
+        "enabled": true
+    },
+
+    //There should't be any trailing whitespace since this will mess up diffs etc.
+    "trailingWhitespace": {
+        "enabled": true
+    },
+
+    //Zero values should include a unit for consistency with other values.
+    "zeroUnit": {
+        "enabled": true,
+        "style": "no_unit"
+    }
+}
