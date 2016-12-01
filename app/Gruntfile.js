@@ -25,6 +25,25 @@ module.exports = function (grunt) {
             }
         },
 
+        /*
+         * Configure grunt-plato code complexity reports
+         * See: https://github.com/jsoverson/grunt-plato
+         * */
+        plato: {
+            options: {
+                // Task-specific options go here.
+            },
+            linting_js: {
+                options: {
+                    jshint: false
+                },
+                files: {
+                    'frontend_reports/linting_js':  jsFiles
+                }
+            }
+
+        },
+
         eslint: {
             extends: "eslint:recommended",
             src: jsFiles,
